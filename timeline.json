@@ -1,0 +1,20 @@
+{
+	"who":[{
+		"autor": "jorge",
+		"avatar": "img/avatar.png",
+		"title":"mireya no sabe programar",
+		"content":"se carga el canvas",
+		"publish":"03-12-94/12:00",
+		"attachment":"www.google.com",
+		"location": "40.2838,-3.8215"
+	},
+	{
+		"autor": "nacho",
+		"avatar": "img/avatar.png",
+		"title":"no quiero hacer java",
+		"content":"que no encuentro los comentarios, ya estudiare",
+		"publish":"12-5-92/14:00",
+		"attachment":"www.urjc.es",
+		"location": "40.32123,-3.86432"
+	}]
+}

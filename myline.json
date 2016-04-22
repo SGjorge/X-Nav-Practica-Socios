@@ -1,0 +1,28 @@
+{
+	"jorge":[{
+		"avatar": "img/avatar.png",
+		"notice":[{
+				"title":"mireya no sabe programar",
+				"content":"se carga el canvas",
+				"publish":"03-12-94/12:30"
+			},
+			{
+				"title":"clases",
+				"content":"terminales de comunicaciones nula",
+				"publish":"03-12-94/18:00"
+			}]
+	}],
+	"nacho":[{
+		"avatar": "img/avatar.png",
+		"notice":[{
+				"title":"clases",
+				"content":"terminales de comunicaciones nula",
+				"publish":"12-5-92/12:15"
+			},
+			{
+				"title":"mireya no sabe programar",
+				"content":"se carga el canvas",
+				"publish":"12-5-92/15:10"
+			}]
+	}]
+}

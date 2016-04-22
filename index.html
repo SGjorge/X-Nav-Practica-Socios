@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="leaflet/leaflet.js"></script>
+		<script src="leaflet/leaflet-src.js"></script>
+		<script src="external/jquery/jquery.js"></script>
+  		<script src="jquery-ui.js"></script>
+		<script src="app.js" type="text/javascript"></script>
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" charset="utf-8"/>
+		<link rel=StyleSheet href="style.css">
+		<link href="jquery-ui.css" rel="stylesheet">
+  		
+  		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+		<link rel=StyleSheet href="leaflet/leaflet.css">
+		<title>Practica 2: Socios</title>
+	</head>
+	<body>
+		<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+	        <div class="container">
+	            <!-- Brand and toggle get grouped for better mobile display -->
+	            <div class="navbar-header">
+	                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+	                    	<span class="sr-only">Toggle navigation</span>
+	                    	<span class="icon-bar"></span>
+	                    	<span class="icon-bar"></span>
+	                    	<span class="icon-bar"></span>
+	                </button>
+	                <a id="loged" class="navbar-brand"></a>
+	                <a href="#add-notice" class="navbar-brand">new notice</a>
+	                <a id="update" class="navbar-brand">0</a>
+	            </div>
+	            	<!-- Collect the nav links, forms, and other content for toggling -->
+	            <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+	               	<ul class="nav navbar-nav">
+	                  	<li>
+	                       	<a><input id="login" type="text" class="form-control" placeholder="login" aria-describedby="basic-addon1"></input></a>
+	                   	</li>
+	                   	<li>
+	                       	<a><input id="passIn" type="password" class="form-control" placeholder="password" aria-describedby="basic-addon1"></input></a>
+	                   	</li>
+	                   	<li>
+	                       	<a><button id="send" type="button" class="btn btn-default dropdown-toggle glyphicon glyphicon-ok"></button></a>
+	                   	</li>
+	                   	<li>
+	                       	<a><button id="close" type="button" class="btn btn-default" hidden="hidden"> close sesion</button></a>
+	                   	</li>
+	               	</ul>
+	            </div>
+	            	<!-- /.navbar-collapse -->
+	        </div>
+        	<!-- /.container -->
+    	</nav>
+    	<hr class="intro-divider">
+		<div class="row" id="tl"></div>
+		<div class="row" id="pd"></div>
+		<div class="row" id="ml"></div>
+		<div id="tabs" hidden="true">
+			<ul>
+				<li><a href="#tabs-1" id="timeline">get timeline</a></li>
+				<li><a href="#tabs-3" id="myline">get myline</a></li>
+			</ul>
+			<div id="tabs-1" class="row tl">			
+				<div id="tl-ac" class="accordion">
+					<!-- se creara de forma dinamica -->
+				</div>
+			</div>
+			<div id="tabs-2" class="row upd">
+				<p></p>
+			</div>
+			<div id="tabs-3" class="row ml"></div>
+		</div>
+		<hr class="intro-divider">
+		<div id="site" hidden="hidden">
+			<h3 id="map-title">aqui ira el titulo de la noticia</h3>
+			<button id="locate" class="btn btn-default" >get event location</button>
+			<button id="hide-locate" class="btn btn-default" >close event location</button>
+			<div id="map" hidden="hidden"></div>
+		</div>
+		<hr class="intro-divider">
+		<div id="add-notice" hidden="true">
+			<p>title:<input id="title-publish" class="form-control" type="text" placeholder="title"></input></p>
+			<p>
+				<form role="form">
+				    <div class="form-group">
+				      <label for="comment">content:</label>
+				      <textarea id="content-publish" class="form-control" rows="5" id="comment" placeholder="content"></textarea>
+				   	</div>
+				</form>
+			</p>
+			<button id="publish" class="btn btn-default" >publish</button>
+		</div>
+		<div id="register">
+			<div class="row">
+                <div class="col-lg-12">
+                	<h1>Socios</h1>
+                    <h3>Social Media</h3>
+                    <hr class="intro-divider">
+					<p class="col-md-2 col-md-offset-3">login:<input id="login-reg" class="form-control col-xs-2" placeholder="login"></input></p>
+					<p class="col-md-2">password:<input type="password" class="form-control" placeholder="password"></input></p>
+					<p class="col-md-2">confirm password:<input type="password" class="form-control" placeholder="confirm password"></input></p>
+				</div>
+				<button id="send-reg" class="btn btn-default" >confirm</button>
+			</div>
+		</div>
+	</body>
+</html>

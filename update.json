@@ -1,0 +1,20 @@
+{
+	"who":[{
+		"autor": "jorge",
+		"avatar": "img/avatar.png",
+		"title":"clases",
+		"content":"terminales de comunicaciones nula",
+		"publish":"03-10-94/12:00",
+		"attachment":"cursosweb.github.io",
+		"location": "42.2838,-4.8215"
+	},
+	{
+		"autor": "nacho",
+		"avatar": "img/avatar.png",
+		"title":"no se de java",
+		"content":"no sabiamos de java lva",
+		"publish":"10-5-92/18:00",
+		"attachment":"www.google.com",
+		"location": "43.32123,-3.7412"
+	}]
+}
